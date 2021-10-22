@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Usecapture-addEventListner</title>
+	<style type="text/css">
+	#outer{
+		width: 300px;
+		height: 200px;
+		background: red;
+	}
+	#inner{
+		width: 150px;
+		height: 100px;
+		background: yellow;
+		margin: 40px;
+	}
+		
+	</style>
+	
+	
+</head>
+<body>
+	<div id="main">
+	<div id="outer">
+		<h3>Outer</h3>
+		<div id="inner">
+		<h3>inner</h3>
+		
+	</div>
+		
+	</div>
+	
+	</div>
+	<script type="text/javascript">
+		document.querySelector("#inner").addEventListener("click", function(){
+			alert('Inner div');
+		}, true);
+
+		document.querySelector("#outer").addEventListener("click",function() {
+			alert("outer Div")
+		},false);
+	</script>
+
+</body>
+</html>

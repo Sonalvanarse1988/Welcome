@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window.print</title>
+</head>
+<body>
+    <div id="divOne">Div one content here
+        <button onclick="myfun('divOne')">Div one</button>
+    </div>
+
+    <div id="divTwo">Div two content here
+        <button onclick="myfun('divTwo')">Div two</button>
+    </div>
+
+    <div id="divThree">Div three content here
+        <button onclick="myfun('divThree')">Div Three</button>
+    </div>
+    <button onclick="mydocument()">Whole Page</button>
+    <script>
+        function mydocument(){
+            window.print();//document.body.innerHTML
+        }
+function myfun (paravalue) {
+    let backup= document.body.innerHTML;
+    let divcontent= document.getElementById(paravalue).innerHTML;
+    document.body.innerHTML= divcontent;
+    window.print();
+    document.body.innerHTML= backup;
+ 
+}
+
+
+
+    </script>
+</body>
+</html>

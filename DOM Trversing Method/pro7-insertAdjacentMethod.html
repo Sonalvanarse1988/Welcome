@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#test{
+			width:600px;
+		height:300px;
+		background:lightblue;
+		padding-top: 20px;
+		margin: 50px;
+}
+	</style>
+</head>
+<body>
+	<div id="test">
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+	</div>
+	<script type="text/javascript">
+		
+var newElement = document.createElement("h2");
+
+var newText = document.createTextNode("This is just Text");
+
+newElement.appendChild(newText);
+
+var target= document.getElementById("test");
+
+target.insertAdjacentElement("beforebegin", newElement);
+ target.insertAdjacentElement("afterbegin", newElement);
+
+
+
+var target= document.getElementById("test");
+
+var newElement = "<h2>This is heading</h2>"
+
+target.insertAdjacentHTML("afterend", newElement);
+
+target.insertAdjacentHTML("beforeend", newElement);
+
+
+var target= document.getElementById("test");
+
+ var newText ="This is Heading";
+
+ target.insertAdjacentText("beforeend",newText);
+
+
+target.insertAdjacentText("beforebegin",newText);
+
+	</script>
+	<script type="text/javascript" src="js/pro7-insertAdjacentElement.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AddclassList Method</title>
+	<style type="text/css">
+		#header{
+			width: 100%;
+			height: 150px;
+			
+			padding: 40px;
+
+		}
+		.abc{
+			background-color: red;
+		}
+		.dfg{
+			background-color: green;
+		}
+		
+	</style>
+</head>
+<body>
+<div id="header" class="abc dfg ghj">
+	<h1>SevenMentor</h1>
+</div> 
+<script type="text/javascript">
+	//add classlist
+	
+	// document.getElementById("header").addEventListener("click",abc);
+
+	// function abc(){
+	// 	document.getElementById("header").classList.add("xyz","efg");
+	// }
+
+	//remove classlist
+
+	// document.getElementById("header").addEventListener("click",abc);
+	// function abc(){
+	// 	document.getElementById("header").classList.remove("xyz");
+	// 	var a =document.getElementById("header").classList
+	// 	console.log(a); 
+	//}
+	//toggle - It repeats the function
+	// document.getElementById("header").addEventListener("click",abc);
+
+	// function abc(){
+	// 	document.getElementById("header").classList.toggle("xyz");
+
+	// }
+     //items (index)
+	
+	// document.getElementById("header").addEventListener("click",abc);
+
+	// function abc(){
+	// 	 var a =document.getElementById("header").classList.item[1];
+	// 	 console.log(a);
+	//}
+
+	//Contains: It gives a true or false values.
+	 document.getElementById("header").addEventListener("click",abc);
+   
+	function abc(){
+	 var a =document.getElementById("header").classList.contains("xyz");
+		 console.log(a);
+	 }
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<!--Methods
+	add
+	remove
+	toggle
+	contains
+	items(index)
+	length-->
+
+</body>
+</html>
